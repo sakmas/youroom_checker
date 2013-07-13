@@ -1,0 +1,28 @@
+{
+    "name": "youRoom Checker",
+    "version": "0.0.1",
+    "icons": {
+        "48": "img/icon-48.png",
+        "128": "img/icon-128.png" 
+    },
+    "description": "Uses OAuth to connect to Google's contacts service and display a list of your contacts.",
+    "background": {
+        "scripts": [
+            "chrome_ex_oauthsimple.js",
+            "chrome_ex_oauth.js",
+            "js/background.js"
+        ]
+    },
+    "browser_action": {
+        "default_title": "youRoom Checker",
+        "default_icon": "img/icon-19-off.png"
+    },
+    "permissions": [
+        "tabs",
+        "https://www.youroom.in/oauth/request_token",
+        "https://www.youroom.in/oauth/authorize",
+        "https://www.youroom.in/oauth/authorize"
+    ],
+    "options_page": "html/options.html",
+    "manifest_version": 2
+}
